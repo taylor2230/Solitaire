@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solitaire</title>
+    <link rel="icon" href="./content_assets/icon.png"/>
+    <link rel="stylesheet" type="text/css" href="./css/site.css">
+    <link rel="stylesheet" type="text/css" href="./css/game.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<section class="header">
+    <h1 id="title">Solitaire</h1>
+</section>
+<section class="App">
+    <form id="initialize">
+        <h3 id="settings">Game Settings</h3>
+        <input type="radio" class="draw-setting" id="one-card" name="draw-setting" value="One Card" checked>
+        <label for="one-card">One Card</label>
+        <input type="radio" class="draw-setting" id="three-card" name="draw-setting" value="Three Cards">
+        <label for="three-card">Three Cards</label>
+        <a id="start" onclick="startNewGame();">New Game</a>
+    </form>
+    <div id="game">
+
+    </div>
+</section>
+</body>
+<script src="./javascript/deck.js"></script>
+<script src="./javascript/package.js"></script>
+<script src="./javascript/solitaire.js"></script>
+</html>

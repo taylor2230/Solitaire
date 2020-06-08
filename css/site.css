@@ -1,0 +1,114 @@
+/*
+For the main site CSS only
+*/
+*
+{
+    margin:0;
+    padding:0;
+}
+html
+{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+body
+{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', serif;
+    background-color: #35654d;
+    min-width: 1075px;
+    max-width: 1500px;
+}
+.header
+{
+    width: 100%;
+    background-color: #264a38;
+}
+#title
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 23pt;
+    font-weight: lighter;
+    letter-spacing: 4px;
+}
+.App
+{
+    position: relative;
+}
+#initialize
+{
+    padding: 5px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    position: relative;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #264a38;
+}
+#settings
+{
+    padding-right: 6px;
+    letter-spacing: 4px;
+    border-right: 1px solid white;
+}
+.draw-setting
+{
+    display: none;
+}
+.draw-setting:hover+label
+{
+    cursor: pointer;
+}
+.draw-setting:checked+label
+{
+    display: flex;
+    margin: 0;
+    padding: 4px;
+    background-color: #264a38;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border:2px solid #264a38;
+    border-radius: 10px 10px 10px 10px;  
+}
+label
+{
+    position: relative;
+    left: 10px;
+    padding-right: 6px;
+}
+label:nth-of-type(2) {
+    position: relative;
+    left: 20px;
+}
+#start
+{
+    position: relative;
+    left: 30px;
+    margin: 0;
+    padding: 4px;
+    background-color: #264a38;
+    color: white;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    border:2px solid #264a38;
+    border-radius: 10px 10px 10px 10px;  
+}
+#start:hover
+{
+    cursor: pointer;
+}
+#start:active
+{
+    color: #264a38;
+    background-color: white;
+    border:2px solid white;
+}

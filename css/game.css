@@ -1,0 +1,244 @@
+/*
+Specific to the game only
+*/
+
+/*
+Win
+*/
+#win {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 84px;
+  margin-top:20%;
+  animation: colorchange 10s;
+  animation-iteration-count: infinite;
+}
+
+    @keyframes colorchange
+    {
+      0%   {color: white; letter-spacing: 8px; font-size:106px;}
+      25%  {color: yellow;letter-spacing: 4px;font-size:84px;}
+      50%  {color: lightblue;letter-spacing: 8px;font-size:106px;}
+      75%  {color: orange;letter-spacing: 4px;font-size:84px;}
+      100% {color: white; letter-spacing: 8px; font-size:106px;}
+    }
+/*
+Win
+*/
+
+/*
+draw deck
+*/
+#game {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+#draw-deck {
+  position: relative;
+  height: 180px;
+  top: 5px;
+  left: 5px;
+  box-sizing: border-box;
+}
+#draw-deck:hover {
+  cursor: pointer;
+  border: 2px solid yellow;
+}
+#draw-deck:active {
+  opacity: 0.7;
+}
+/*
+draw deck
+*/
+
+/*
+drawn cards
+*/
+.drawn-section {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  top: 5px;
+  left: 25px;
+}
+.drawn:nth-child(2) {
+  position: relative;
+  left: -85px;
+}
+.drawn:nth-child(3) {
+  position: relative;
+  left: -170px;
+}
+.drawn {
+  position: relative;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+}
+.drawn:hover:enabled {
+  cursor: pointer;
+  border: 2px solid yellow;
+}
+.drawn:active:enabled {
+    opacity: 0.7;
+}
+#draw-deck {
+  background: transparent;
+  border: none;
+}
+/*
+drawn cards
+*/
+
+/*
+points
+*/
+.points {
+  float: right;
+  position: relative;
+  display: inline-flex;
+  flex-flow: row wrap;
+  flex-direction: row-reverse;
+  min-width: 530px;
+  top: 5px;
+  right: 33px;
+}
+.points-card {
+  position: relative;
+  display: inline;
+  min-width: 130px;
+  width: 15%;
+}
+.pointsCards {
+  background: transparent;
+  border: none;
+}
+.pointsCards:hover:enabled {
+  cursor: pointer;
+  border: 2px solid yellow;
+}
+.pointsCards:active:enabled {
+    opacity: 0.7;
+}
+/*
+points
+*/
+
+/*
+play area
+*/
+#play-area {
+  width: 100%;
+}
+#blank{
+  background: transparent;
+}
+.play {
+  position: relative;
+  display: inline-flex;
+  max-width: 1500px;
+  top: 45px;
+  left: 5px;
+}
+.play-cards {
+  position: relative;
+  display: inline;
+  min-width: 130px;
+  width: 15%;
+}
+.playCards {
+  background: transparent;
+  border: none;
+}
+.playCards:nth-child(2) {
+  position: relative;
+  top: calc(-145px * 1);;
+}
+.playCards:nth-child(3) {
+  position: relative;
+  top: calc(-145px * 2);;
+}
+.playCards:nth-child(4) {
+  position: relative;
+  top: calc(-145px * 3);;
+}
+.playCards:nth-child(5) {
+  position: relative;
+  top: calc(-145px * 4);
+}
+.playCards:nth-child(6) {
+  position: relative;
+  top: calc(-145px * 5);;
+}
+.playCards:nth-child(7) {
+  position: relative;
+  top: calc(-145px * 6);
+}
+.playCards:nth-child(8) {
+  position: relative;
+  top: calc(-145px * 7);
+}
+.playCards:nth-child(9) {
+  position: relative;
+  top: calc(-145px * 8);
+}
+.playCards:nth-child(10) {
+  position: relative;
+  top: calc(-145px * 9);
+}
+.playCards:nth-child(11) {
+  position: relative;
+  top: calc(-145px * 10);
+}
+.playCards:nth-child(12) {
+  position: relative;
+  top: calc(-145px * 11);
+}
+.playCards:nth-child(13) {
+  position: relative;
+  top: calc(-145px * 12);
+}
+.playCards:nth-child(14) {
+  position: relative;
+  top: calc(-145px * 13);
+}
+.playCards:nth-child(15) {
+  position: relative;
+  top: calc(-145px * 14);
+}
+.playCards:nth-child(15) {
+  position: relative;
+  top: calc(-145px * 14);
+}
+.playCards:nth-child(16) {
+  position: relative;
+  top: calc(-145px * 15);
+}
+.playCards:nth-child(17) {
+  position: relative;
+  top: calc(-145px * 16);
+}
+.playCards:nth-child(18) {
+  position: relative;
+  top: calc(-145px * 17);
+}
+.playCards:nth-child(19) {
+  position: relative;
+  top: calc(-145px * 18);
+}
+.playCards:nth-child(20) {
+  position: relative;
+  top: calc(-145px * 19);
+}
+.playCards:hover:enabled {
+  cursor: pointer;
+  border: 2px solid yellow;
+}
+.playCards:active:enabled {
+    opacity: 0.7;
+}
+/*
+play area
+*/
